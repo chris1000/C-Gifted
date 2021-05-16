@@ -107,7 +107,7 @@ input, select, textarea {
 		line-height: 1.75em;
 		font-display: swap;
 	}
-
+ 
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -418,8 +418,7 @@ input, select, textarea {
 		.row.gtr-50 {
 			margin-top: 0;
 			margin-left: -1em;
-			margin: 0 0 2.25em 0;
-
+			padding: 0 0 2.25em 0;
 		}
 
 			.row.gtr-50 > * {
@@ -1716,6 +1715,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 4.5em);
 		width: 45em;
+		
 	}
 
 		.container.xsmall {
@@ -2206,20 +2206,21 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.main {
-			display: block;
-			min-width: 100%;
-    height: auto;
-			border-radius: 0;
-		}
+			.image.main {
+				display: block;
+				min-width: 100%;
+		height: auto;
+				border-radius: 0;
+			}
+	
+			.image.main.background {
+				background: url(../../images/bg.jpg) no-repeat center center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
 
-		.image.main.background {
-			background: url(../../images/bg.jpg) no-repeat center center;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
+			}
 /* List */
 
 	ol {
@@ -2912,6 +2913,58 @@ input, select, textarea {
 
 /* XLarge */
 
+@media screen and (max-width: 4000px) {
+
+	/* Basic */
+
+		body, input, select, textarea {
+			font-size: 13pt;
+		}
+
+	/* Header */
+
+		#header {
+			width: 21em;
+		}
+
+			#header > header {
+				padding: 2em;
+			}
+
+			#header > footer {
+				padding: 1.5em;
+			}
+
+	/* Wrapper */
+
+		#wrapper {
+			padding-right: 21em;
+		}
+
+	/* Main */
+
+		#main > section > .container {
+			padding: 4em 0 2em 0;
+		}
+
+		/* Image */
+
+		.image.left, .image.right {
+			max-width: 40%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.main {
+			height: 25em;
+		}
+
+}
+
+/* XLarge */
+
 	@media screen and (max-width: 1680px) {
 
 		/* Basic */
@@ -2946,6 +2999,20 @@ input, select, textarea {
 				padding: 4em 0 2em 0;
 			}
 
+			/* Image */
+
+			.image.left, .image.right {
+				max-width: 40%;
+			}
+
+				.image.left img, .image.right img {
+					width: 100%;
+				}
+
+			.image.main {
+				height: 25em;
+			}
+
 	}
 
 /* Large */
@@ -2969,6 +3036,21 @@ input, select, textarea {
 			#wrapper {
 				padding-right: 20em;
 			}
+
+			/* Image */
+
+			.image.left, .image.right {
+				max-width: 40%;
+			}
+
+				.image.left img, .image.right img {
+					width: 100%;
+				}
+
+			.image.main {
+				height: 20em;
+			}
+
 
 	}
 
@@ -3002,6 +3084,7 @@ input, select, textarea {
 
 			.image.main {
 				height: 20em;
+				
 			}
 
 		/* Header */
