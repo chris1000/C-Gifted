@@ -2478,8 +2478,8 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: #C12C2C;
-				color: #fff
+				background-color: #F5F5F5;
+				color: #424242
 			}
 
 		table td {
@@ -2729,7 +2729,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background: #C12C2C;
-		color: #d2f2e9;
+		color: #fff;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2748,11 +2748,11 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #b7eadc;
+			color: #fff;
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: #fff;
 		}
 
 			#header a:hover {
@@ -2779,7 +2779,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: #fff;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
