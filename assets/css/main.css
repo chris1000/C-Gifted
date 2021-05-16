@@ -1807,7 +1807,7 @@ input, select, textarea {
 /* Form */
 
 	form {
-		margin: 0 0 2.25em 0;
+		padding: 0 0 2.25em 0;
 	}
 
 	label {
@@ -2483,14 +2483,14 @@ input, select, textarea {
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			padding: 0.50em 0.50em;
 		}
 
 		table th {
 			color: #777;
 			font-size: 0.9em;
 			font-weight: 700;
-			padding: 0 0.75em 0.75em 0.75em;
+			padding: 0 0.50em 0.50em 0.50em;
 			text-align: left;
 		}
 
@@ -2504,10 +2504,12 @@ input, select, textarea {
 
 		table.alt {
 			border-collapse: separate;
-			
+			table-layout: fixed;
+
 		}
 
 			table.alt tbody tr td {
+				
 				border: solid 2px #1C1D21;
 				border-left-width: 0;
 				border-top-width: 0;
