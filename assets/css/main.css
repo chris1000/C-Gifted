@@ -134,6 +134,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2.25em 0;
+		font-weight: 500;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2207,14 +2208,18 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20em;
+			min-width: 100%;
+    height: auto;
 			border-radius: 0;
 		}
 
-			.image.main img {
-				border-radius: 0;
-			}
-
+		.image.main.background {
+			background: url(../../images/bg.jpg) no-repeat center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
 /* List */
 
 	ol {
@@ -2384,9 +2389,17 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 	}
+	ul.feature-icons-bullets {
+		list-style: disc;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		list-style-position: inside;
+	}
 
-		ul.feature-icons li {
+		ul.feature-icons li  {
 			text-decoration: none;
+			font-weight: 500;
 			display: inline-block;
 			margin: 0 0 1.6875em 0;
 			padding: 0.35em 0 0 3.5em;
@@ -2453,16 +2466,19 @@ input, select, textarea {
 	table {
 		margin: 0 0 2.25em 0;
 		width: 100%;
+		
 	}
 
 		table tbody tr {
 			border: solid 2px #f4f4f4;
 			border-left: 0;
 			border-right: 0;
+			
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: #fafafa;
+				background-color: #C12C2C;
+				color: #fff
 			}
 
 		table td {
@@ -2487,12 +2503,15 @@ input, select, textarea {
 
 		table.alt {
 			border-collapse: separate;
+			
 		}
 
 			table.alt tbody tr td {
-				border: solid 2px #e4e4e4;
+				border: solid 2px #1C1D21;
 				border-left-width: 0;
 				border-top-width: 0;
+				vertical-align: middle;
+
 			}
 
 				table.alt tbody tr td:first-child {
@@ -2797,7 +2816,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 1px #efefef;
+					border-top: #1C1D21 solid 1px ;
 					display: block;
 					padding: 0;
 				}
@@ -2819,7 +2838,7 @@ input, select, textarea {
 							color: #C12C2C !important;
 						}
 
-					#header > nav ul li:first-child {
+					#hceader > nav ul li:first-child {
 						border-top: 0;
 					}
 
@@ -2829,6 +2848,19 @@ input, select, textarea {
 		background: #fff;
 		padding-right: 23em;
 	}
+
+	.bg-dark {
+		background-color: #1C1D21
+	}
+
+	#two, #four, #six, #eight {
+		background-color: #1C1D21;
+		color: #fff;
+	}
+	.light {
+		color: #fff;
+	}
+
 
 /* Main */
 
@@ -2857,6 +2889,7 @@ input, select, textarea {
 			line-height: 1em;
 			list-style: none;
 			padding: 0;
+			text-align: center;
 		}
 
 			#footer .copyright li {
@@ -2994,6 +3027,7 @@ input, select, textarea {
 				-ms-transform: translateX(23em);
 				transform: translateX(23em);
 				right: 0;
+				
 			}
 
 				#header > footer {
@@ -3037,7 +3071,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #222;
+				background: #1C1D21;
 				color: #fff;
 				min-width: 320px;
 			}
