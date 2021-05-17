@@ -7,6 +7,128 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+:root {
+	--main-bg-color: #C12C2C;
+}
+.pricing {
+    position: relative;
+    border: 1px solid #1C1D21;
+    background-color: #10161A;
+    z-index: 11;
+    margin: 15px 0;
+	border-radius: 5px;
+	color: #fff
+}
+
+
+.pricing:hover:after {
+    height: 100%;
+}
+
+.pricing .price-head {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pricing .price-title {
+    display: block;
+    padding: 40px 0 20px;
+    -webkit-transition: .2s color;
+    transition: .2s color;
+}
+
+.pricing .price {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid var(--main-bg-color);
+}
+
+.pricing .price h3 {
+    font-size: 30px;
+    margin: 0;
+	color: #fff;
+    -webkit-transition: .2s color;
+    transition: .2s color;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.pricing .duration,
+.team .team-content span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.pricing .duration {
+    display: block;
+    color: #fff;
+    -webkit-transition: .2s color;
+    transition: .2s color;
+}
+
+.pricing:hover .duration {
+    color: #fff;
+}
+
+.pricing .price-btn {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.pricing::after,
+.service:after,
+.stylebox:after,
+.brands:after {
+    top: 0;
+    content: "";
+}
+
+.pricing .price h3,
+.work .work-content {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.home-content h1,
+.pricing .price-title,
+.work .work-content span {
+    text-transform: uppercase;
+}
+
+.about,
+.pricing,
+.pricing .price,
+.service .svg-inline--fa,
+.work .work-content,
+.work .work-link,
+.work .work-link a {
+    text-align: center;
+}
+
+.price-content{
+	list-style-type: none;
+	text-align: center;
+}
+
+.pricing ul {
+	margin: 0px;
+	padding: 0px;
+}
+.pricing ul li {
+	margin: 0px;
+	padding: 0px;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
